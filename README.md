@@ -5,7 +5,7 @@ Here are some examples of how to use openssl-enc for symmetric cipher encryption
 Symmetric ciphers like AES (and even DES) frequently come up during penetration testing or CTF challenges so its helpful to have a quick one-liner reference like this page for quickly dealing with them.
 
 ## What is Openssl-enc?  
-OpenSSL comes with a handy utility that provides symmetric cipher commands for encryption or decryption of vartious block and stream ciphers. For convience Base64 encoding or decoding can also be performed by the OpenSSL-enc utility.
+OpenSSL comes with a handy utility that provides symmetric cipher commands for encryption or decryption of vartious block and stream ciphers. For convience zlib compression and Base64 encoding can also be performed on data by the OpenSSL-enc utility.
 
 ## What Cipher are support by OpenSSL-ENC?
 At the time of writing this post, OpenSSL-ENC supported 111 ciphers.  
