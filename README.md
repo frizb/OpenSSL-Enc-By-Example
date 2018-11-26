@@ -62,9 +62,9 @@ CBC (Cipher Blocker Chaining) is an advanced form of block cipher encryption. Wi
 We are going to use CBC for this example which requires both a Key and an Initialization Vector (IV). An initialization vector is a random number used in combination with a secret key as a means to encrypt data. This number is sometimes referred to as a nonce, or "number occuring once" as an encryption program uses it only once per session.  The Key and IV need to be passed to the OpenSSL-ENC command in hex format.  The in AES-128, the key MUST have a length that is a multiple of 16, but the IV can be any length as it is really more like an inital offset value.
 
 ```
-root@kali:~# echo -n "thiskeyis16chars" | od -A n -t x1 |sed 's/ //g'
+root@kali:~# echo -n 'thiskeyis16chars' | od -A n -t x1 |sed 's/ //g'
 746869736b6579697331366368617273
-root@kali:~# echo -n "mynonrandomiv" | od -A n -t x1 |sed 's/ //g'
+root@kali:~# echo -n 'mynonrandomiv' | od -A n -t x1 |sed 's/ //g'
 6d796e6f6e72616e646f6d6976
 ```
 We now have our Key in HEX value: **746869736b6579697331366368617273**  
